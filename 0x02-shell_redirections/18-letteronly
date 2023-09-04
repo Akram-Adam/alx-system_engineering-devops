@@ -1,0 +1,2 @@
+#!/bin/bash
+qrep '^[[:upper:]]\|^[[:lower:]]' /etc/ssh/sshd_config
