@@ -1,0 +1,7 @@
+
+# Configure the SSH client to connect to the server using the private key ~/.ssh/school and deny password authentication
+Host myserver
+HostName 54.173.122.164
+User ubuntu
+IdentityFile ~/.ssh/school
+PasswordAuthentication no
