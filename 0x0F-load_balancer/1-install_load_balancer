@@ -3,17 +3,17 @@
 
 # Install HAproxy on a server
 apt-get -y update
-apt-get -y install haproxy=1.6.\*
+sudo apt install haproxy
 
 # Configure haproxy configuration file to distribute requests using a roundrobin algorithm
 echo '
-frontend sammykingx.tech
+frontend megakira.tech
         bind 0:80
         default_backend web_servers
 
 backend web_servers
         balance roundrobin
-        server 525303-web-01 54.173.122.164:80
+        server 525303-web-01 18.214.89.35:80
         server 525303-web-02 100.26.235.137:80
 ' >> /etc/haproxy/haproxy.cfg
 
